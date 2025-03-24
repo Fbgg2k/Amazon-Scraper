@@ -30,13 +30,13 @@ Este projeto é uma aplicação web que permite a busca de produtos na Amazon. E
 1. Clone o repositório para sua máquina local:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/Fbgg2k/Amazon-Scraper.git
    ```
 
 2. Navegue até o diretório do projeto:
 
    ```bash
-   cd seu-repositorio
+   cd amazon scraper
    ```
 
 3. Instale as dependências para o backend:
