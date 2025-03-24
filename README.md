@@ -89,5 +89,4 @@ Se você tiver alguma dúvida ou sugestão, fique à vontade para me contactar.
 
 ---
 
-Aproveite e divirta-se com seu projeto!
-```
+Aproveite e divirta-se com este projeto!
