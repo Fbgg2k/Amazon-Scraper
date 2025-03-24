@@ -1,0 +1,140 @@
+/* Centralizar apenas horizontalmente */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+  display: flex;
+  flex-direction: column; /* Mantém a ordem vertical */
+  align-items: center; /* Centralizar horizontalmente */
+  min-height: 100vh; /* Evita o conteúdo ultrapassar a tela */
+}
+
+/* Garantir que o #app não seja empurrado */
+#app {
+  margin-top: 40px; /* Afasta do topo da tela */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Estilizar o título (h1) */
+h1 {
+  color: #000000;
+  margin-bottom: 20px; /* Espaço entre o título e o input */
+}
+
+/* Container do input e botão */
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espaço entre input e botão */
+}
+
+/* Estilizar o input */
+input {  
+  width: 300px; /* Largura do input */  
+  padding: 10px; /* Espaçamento interno */  
+  border: 1px solid #ddd; /* Borda do input */  
+  border-radius: 20px 0 0 20px; /* Bordas arredondadas em um lado */  
+  font-size: 16px; /* Tamanho da fonte */  
+  outline: none; /* Remove o contorno padrão */  
+}  
+
+button {  
+  background-color: #FFA500; /* Cor laranja do botão */  
+  border: none; /* Remove borda */  
+  border-radius: 0 20px 20px 0; /* Bordas arredondadas em um lado */  
+  padding: 10px; /* Espaçamento interno */  
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */  
+  font-size: 16px; /* Tamanho da fonte */  
+}  
+
+button i {  
+  color: white; /* Cor do ícone */  
+}  
+
+button:hover {  
+  background-color: #FF8C00; /* Cor do botão ao passar o mouse */  
+}
+
+/* Seção de resultados */
+#results {
+  margin-top: 40px; /* Espaço entre o input/botão e os resultados */
+  margin-left: 40px; /* Espaço à esquerda */
+  margin-right: 40px; /* Espaço à direita */
+  margin-bottom: 40px; /* Espaço abaixo */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px; /* Espaçamento entre os cards */
+}
+
+/* Cada produto */
+.product {  
+  border: 1px solid #ddd; /* Borda do card */  
+  padding: 40px; /* Espaçamento interno */  
+  border-radius: 8px; /* Bordas arredondadas */  
+  display: flex; /* Usando flexbox */  
+  flex-direction: column; /* Direção vertical */  
+  justify-content: space-between; /* Espaçando os itens */  
+  align-items: center; /* Centraliza */  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */  
+  background: #fff; /* Fundo branco */  
+  height: 300px; /* Altura fixa para garantir uniformidade (ajuste conforme necessário) */  
+}
+
+.product img {
+  width: 100%;
+  max-width: 150px;
+  max-height: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Título do Produto */  
+.product h3 {  
+  font-size: 16px; /* Tamanho da fonte do título */  
+  margin: 10px 0; /* Margens superiores e inferiores */  
+  font-weight: bold; /* Deixa o título em negrito */
+  flex-grow: 0; /* Não cresce para ocupar o espaço restante */
+  text-align: justify; /* Justifica o texto */
+  overflow: hidden; /* Oculta o texto que ultrapassa */  
+  text-overflow: ellipsis; /* Exibe reticências (...) para texto cortado */  
+  width: 100%; /* Garante que o título ocupe a largura total */
+}  
+
+/* Avaliações e Preço */  
+.product p {  
+  font-size: 14px; /* Tamanho da fonte para outras informações */  
+  color: #555; /* Cor para as avaliações */  
+  margin: 5px 0; /* Margem para dar espaço entre os elementos */
+  flex-grow: 0; /* Não cresce para ocupar o espaço restante */
+  text-align: left; /* Alinha à esquerda */
+  margin-top: auto; /* Empurra para o final do card */
+  margin-bottom: auto; /* Empurra para o final do card */
+  overflow: hidden; /* Oculta o texto que ultrapassa */  
+  text-overflow: ellipsis; /* Exibe reticências (...) para texto cortado */  
+  width: 100%; /* Garante que o título ocupe a largura total */
+}
+
+/* Responsividade: 2 colunas em telas médias */
+@media (max-width: 900px) {
+  #results {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsividade: 1 coluna em telas pequenas */
+@media (max-width: 600px) {
+  #results {
+    grid-template-columns: 1fr;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
