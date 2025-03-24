@@ -85,17 +85,9 @@ Este projeto é licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE)
 
 Se você tiver alguma dúvida ou sugestão, fique à vontade para me contactar.
 
-**E-mail**: seuemail@exemplo.com
+**E-mail**: bferreirafelipe@gmail.com
 
 ---
 
 Aproveite e divirta-se com seu projeto!
 ```
-
-### Como Usar o README
-
-- Substitua todos os espaços reservados, como `seu-usuario`, `seu-repositorio` e seu e-mail, com as informações reais.
-- Você pode adicionar ou remover seções conforme necessário para adaptar à natureza do seu projeto.
-- Salve o arquivo como `README.md` na raiz do seu repositório Git.
-
-Com isso, o seu projeto estará bem documentado no GitHub! Se precisar de mais alguma coisa, é só avisar.
